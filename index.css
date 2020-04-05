@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+}
+
+#submitBallInputButton,
+.ball-class {
+  background-color: blue;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+#submitBallInputButton:hover,
+.ball-class:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#submitBallInputButton:focus,
+.ball-class:focus {
+  outline: none;
+  border: 2px solid #7a7aff;
+  border-radius: 4px;
+}
+
+.drop-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ball-input-details-container {
+  padding: 10px;
+}
+
+.ball-input-details-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form-group {
+  margin: 5px;
+  padding: 5px;
+}
+
+.ball-drop-simulation-container {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  background-color: wheat;
+}

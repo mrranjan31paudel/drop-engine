@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="index.css">
+  <title>Drop Engine</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="drop-content-container">
+      <h1>Ball Drop Simulation</h1>
+      <div class="ball-input-details-container">
+        <form class="ball-input-details-form" onsubmit="submitBallInputs(event)">
+          <div class="input-form-group">
+            <label for="inputRadius">Radius (m): </label>
+            <input class="ball-input-box" id="inputRadius" name="inputRadius" type="number" min="10" max="40"
+              value="10">
+          </div>
+
+          <div class="input-form-group">
+            <label for="inputMass">Mass (kg): </label>
+            <input class="ball-input-box" id="inputMass" name="inputMass" type="number" min="1" max="10" value="1">
+          </div>
+
+          <div class="input-form-group">
+            <label for="inputHeight">Height (m): </label>
+            <input class="ball-input-box" id="inputHeight" name="inputHeight" type="number" min="100" max="500"
+              value="500">
+          </div>
+
+          <div class="input-form-group">
+            <label for="inputColor">Color: </label>
+            <select class="ball-input-box" id="selectColor" name="selectColor">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+
+          <div class="input-form-group">
+            <input id="submitBallInputButton" class="ball-input-box" type="submit" value="Drop the ball">
+            <button class="ball-class" onclick="resumeMotion(event)">
+              Play
+            </button>
+            <button class="ball-class" onclick="pauseMotion(event)">
+              Pause
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div id="simulationContainer" class="ball-drop-simulation-container">
+
+    </div>
+
+    <script src="lib/constants.js"></script>
+    <script src="lib/variables.js"></script>
+    <script src="lib/Ball.js"></script>
+    <script src="lib/dropEngine2D.js"></script>
+    <script src="lib/submitInput.js"></script>
+  </div>
+</body>
+
+</html>
