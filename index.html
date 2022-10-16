@@ -42,20 +42,25 @@
           </div>
 
           <div class="input-form-group">
-            <input id="submitBallInputButton" class="ball-input-box" type="submit" value="Drop the ball">
-            <button class="ball-class" onclick="resumeMotion(event)">
+            <!-- <input id="submitBallInputButton" class="ball-input-box" type="submit" value="Drop the ball"> -->
+            <!-- <button class="ball-class" onclick="resumeMotion(event)">
               Play
             </button>
             <button class="ball-class" onclick="pauseMotion(event)">
               Pause
-            </button>
+            </button> -->
+            <button onclick="submitBallInputs(event);">Drop</button>
           </div>
         </form>
       </div>
     </div>
     <hr>
-    <div id="simulationContainer" class="ball-drop-simulation-container">
+    <!-- <div id="simulationContainer" class="ball-drop-simulation-container">
 
+    </div> -->
+
+    <div id="simulationCanvasContainerCanvas" class="ball-drop-simulation-container">
+      <canvas id="simulatoinCanvas" width="400" height="600"></canvas>
     </div>
 
     <script src="lib/constants.js"></script>
